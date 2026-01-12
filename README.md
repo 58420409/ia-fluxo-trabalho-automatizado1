@@ -49,7 +49,7 @@ Ferramentas como o **GitHub Copilot** auxiliam desenvolvedores na criação de f
 
 ### 🧪 Geração de Testes Automatizados
 
-A IA também pode sugerir e gerar testes unitários, incentivando boas práticas de qualidade e aumentando a cobertura de testes sem impactar negativamente a produtividade da equipe.
+A IA pode sugerir e gerar testes unitários de forma assistida, incentivando boas práticas de qualidade e aumentando a cobertura de testes sem impactar negativamente a produtividade da equipe.
 
 ### 🔁 Integração Contínua (CI/CD)
 
@@ -68,24 +68,30 @@ Essa combinação permite aumentar a velocidade de entrega sem comprometer a qua
 
 ---
 
+## 🤖 Uso do GitHub Copilot na Prática
+
+O GitHub Copilot foi utilizado como assistente de desenvolvimento para gerar a função principal de negócio responsável pelo cálculo do valor final de pedidos com desconto, bem como seus testes unitários.
+
+Durante a implementação, foram utilizados prompts em linguagem natural para solicitar ao Copilot a criação dos testes automatizados. Esses prompts estão documentados diretamente no código-fonte por meio de comentários, conforme solicitado no desafio.
+
+---
+
 ## 🏢 Caso Real de Uso de IA no Desenvolvimento
 
-Diversas empresas e equipes de desenvolvimento já adotaram o GitHub Copilot e o GitHub Actions para melhorar produtividade e qualidade.
+Segundo a documentação oficial do GitHub, equipes que utilizam o **GitHub Copilot** relataram aumento significativo na velocidade de desenvolvimento, especialmente em tarefas repetitivas, além de maior consistência no código.
 
-Segundo a própria documentação do GitHub, equipes que utilizam o **GitHub Copilot** relataram aumento significativo na velocidade de desenvolvimento, especialmente em tarefas repetitivas, além de maior consistência no código.
+O **GitHub Actions** é amplamente utilizado por projetos open source e empresas para automatizar pipelines de testes e deploy, reduzindo erros humanos e aumentando a confiabilidade do software entregue.
 
-Já o **GitHub Actions** é amplamente utilizado em projetos open source e corporativos para automatizar pipelines de testes e deploy, reduzindo erros humanos e melhorando a confiabilidade do software entregue.
-
-Além disso, Martin Fowler destaca em seu artigo *Test Coverage* que a qualidade do software está diretamente relacionada à existência de testes automatizados bem escritos, reforçando a importância de automação no processo de desenvolvimento.
+Além disso, Martin Fowler, em seu artigo *Test Coverage*, destaca que a qualidade do software não deve ser medida apenas pela quantidade de testes, mas pela relevância e efetividade deles, reforçando a importância da automação no processo de desenvolvimento.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Node.js / Python (conforme implementação do projeto)
+- Python
 - GitHub Copilot
 - GitHub Actions
-- Testes Automatizados
+- Pytest
 - GitHub
 
 ---
@@ -93,8 +99,10 @@ Além disso, Martin Fowler destaca em seu artigo *Test Coverage* que a qualidade
 ## 📂 Estrutura do Repositório
 
 ```text
-├── src/                 # Código-fonte da aplicação
+├── app/                 # Código-fonte da aplicação
+│   └── pedidos.py
 ├── tests/               # Testes automatizados
+│   └── test_pedidos.py
 ├── .github/workflows/   # Workflow do GitHub Actions
+│   └── python-tests.yml
 ├── README.md            # Documentação do projeto
-# ia-fluxo-trabalho-automatizado1
