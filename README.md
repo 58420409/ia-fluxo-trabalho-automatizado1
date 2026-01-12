@@ -1,3 +1,5 @@
+[![Python CI - Testes Automatizados](https://github.com/58420409/ia-fluxo-trabalho-automatizado1/actions/workflows/python-tests.yml/badge.svg)](https://github.com/58420409/ia-fluxo-trabalho-automatizado1/actions/workflows/python-tests.yml)
+
 # IA na prática: Acelerando o desenvolvimento e garantindo a qualidade com um fluxo de trabalho automatizado por IA
 
 ## 📌 Contexto e Desafio do Projeto
